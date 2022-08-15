@@ -1,0 +1,129 @@
+/*---------------------------------------- Tag Selectors -----------------------------------*/
+body{
+  background-color: hsl(233, 47%, 7%);
+  font-size: 15px;
+}
+span{
+  color: hsl(277, 64%, 61%);
+}
+h1, h2{
+  color: hsl(0, 0%, 100%);
+  font-family: Inter, sans-serif;
+}
+h2{
+  margin-bottom: 0;
+}
+p{
+  color: hsla(0, 0%, 100%, 0.6);
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 15px;
+}
+
+/*---------------------------------------- Main Section -----------------------------------*/
+.container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10%;
+  background-color: hsl(244, 38%, 16%);
+  border-radius: 10px;
+}
+.containerDiv1{
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  flex: 50%;
+  margin-left: 50px;
+}
+
+/* Main Heading */
+.headingDiv{
+  margin-bottom: 40px;
+}
+.mainHeading{
+  font-size: 2rem;
+  margin: 0 60px 20px 0;
+}
+
+/* Paragraph */
+.mainParagraph{
+  margin-right: 80px;
+}
+
+/* Stats */
+.uppercase{
+  text-transform: uppercase;
+}
+.statsDiv{
+  display: flex;
+  justify-content: flex-start;
+}
+.stat1{
+  flex: 30%;
+}
+.stat2{
+  flex: 30%;
+}
+.stat3{
+  flex: 30%;
+}
+
+/* Image */
+#mobile{
+  display: none;
+}
+.containerDiv2{
+  display: flex;
+  border-radius: 0 10px 10px 0;
+  background-color: hsl(277, 64%, 61%);
+  filter:brightness(90%) contrast(85%);
+    overflow:hidden;
+}
+.centerImage{
+  width: 500px;
+  object-fit: fill;
+  mix-blend-mode:multiply;
+
+}
+/* Media query */
+@media screen and (max-width: 960px){
+  body{
+    text-align:center;
+  }
+  .container{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .containerDiv1{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: center;
+    margin-left: 0;
+  }
+  .mainParagraph{
+    margin-right: 0;
+    margin: 10px;
+  }
+  .mainHeading{
+    margin-right: 0;
+    margin: 10px;
+  }
+  .containerDiv2{
+    justify-content: center;
+    border-radius: 10px 10px 0 0;
+  }
+  .imageContent{
+    object-fit:contain;
+  }
+}
+@media screen and (max-width: 600px){
+  .statsDiv{
+    flex-direction:column;
+  }
+  .containerDiv2{
+    height: 250px;
+  }
+}
+/*---------------------------------------- Footer Section -----------------------------------*/
+.attribution { font-size: 11px; text-align: center; color: #fff;}
+.attribution a { color: hsl(228, 45%, 44%); }
